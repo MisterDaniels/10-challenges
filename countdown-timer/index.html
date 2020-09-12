@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown Timer</title>
-    <link rel="stylesheet" href="/assets/style.css">
-</head>
-<body>
-    <div class="card">
-        <div class="header">
-            <h2>countdown to</h2>
-            <h1 id="reason">Halloween</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Countdown Timer</title>
+        
+        <link rel="stylesheet" href="/assets/style.css">
+    </head>
+    <body>
+        <div id="celebration" class="card">
+            <div class="header">
+                <h2>countdown to</h2>
+                <h1 id="name">Halloween</h1>
+            </div>
+            <div class="body">
+                <ul>
+                    <li>
+                        <h3 id="day">5</h3>
+                        <p for="day">day</p>
+                    </li>
+                    <li>
+                        <h3 id="hour">2</h3>
+                        <p for="hour">hour</p>
+                    </li>
+                    <li>
+                        <h3 id="minute">1</h3>
+                        <p for="minute">minute</p>
+                    </li>
+                    <li>
+                        <h3 id="second">50</h3>
+                        <p for="second">second</p>
+                    </li>
+                </ul>
+            </div>    
         </div>
-        <div class="body">
-            <ul>
-                <li>
-                    <h3 id="day">5</h3>
-                    <p for="day">day</p>
-                </li>
-                <li>
-                    <h3 id="hour">2</h3>
-                    <p for="hour">hour</p>
-                </li>
-                <li>
-                    <h3 id="minute">1</h3>
-                    <p for="minute">minute</p>
-                </li>
-                <li>
-                    <h3 id="second">50</h3>
-                    <p for="second">second</p>
-                </li>
-            </ul>
-        </div>    
-    </div>
-</body>
+        
+        <script src="/assets/script.js"></script>
+    </body>
 </html>

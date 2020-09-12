@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -27,10 +31,13 @@ body {
     justify-content: center;
 
     border-radius: 10px;
-    width: 80%;
-    padding: 60px 20px;
+    padding: 60px 80px;
 
-    background: no-repeat url(https://images.pexels.com/photos/632044/pexels-photo-632044.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) 50% / 100%;
+    background-image: url(https://images.pexels.com/photos/632044/pexels-photo-632044.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
     color: #ffffff;
     -webkit-box-shadow: 0px 10px 57px 33px rgba(0,0,0,0.47);
     -moz-box-shadow: 0px 10px 57px 33px rgba(0,0,0,0.47);
@@ -48,7 +55,7 @@ body {
 }
 
 .card .header h2 {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: lighter;
 }
 
@@ -62,7 +69,7 @@ body {
 }
 
 .card .header h1 {
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -104,11 +111,31 @@ body {
 }
 
 .card .body ul li h3 {
-    font-size: 68px;
+    font-size: 6.8rem;
     font-weight: lighter;
 }
 
 .card .body ul li p {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: lighter;
+}
+
+@media only screen and (max-width: 765px) {
+
+    html {
+        font-size: 50.5%;
+    }
+
+    .card .body ul {
+        flex-direction: column;
+    }
+
+    .card .body ul li:not(:first-child) {
+        margin: 10px 0px 0px 0px;
+    }
+
+    .card .body ul li:first-child {
+        margin: 0;
+    }
+
 }
