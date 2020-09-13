@@ -1,9 +1,9 @@
 const data = {
     celebrations: [
         {
-            name: 'Halloween',
-            date: new Date(new Date().getFullYear(), 09, 31),
-            image: 'https://images.pexels.com/photos/632044/pexels-photo-632044.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'
+            name: 'Christmas',
+            date: new Date(new Date().getFullYear(), 11, 24),
+            image: 'https://images.pexels.com/photos/717988/pexels-photo-717988.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
         }
     ]
 };
@@ -19,7 +19,7 @@ var secondElement = document.getElementById('second');
 setInterval(() => {
     data.celebrations.forEach(celebration => {
         nameElement.innerHTML = celebration.name;
-        cardElement.style.backgroundImage = celebration.image;
+        cardElement.style.backgroundImage = `url(${ celebration.image })`;
 
         const currentDate = new Date();
         const diffMs = Math.abs(celebration.date - currentDate);

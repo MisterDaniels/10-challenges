@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    
+    background-color: #EFF3FF;
+
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+#testimonials {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+}
+
+#testimonials .card {
+    display: flex;
+    flex-direction: row;
+}
+
+#testimonials .card .image {
+    width: 40%;
+}
+
+#testimonials .card .image img {
+    width: 100%;
+    height: 100%;
+}
+
+#testimonials .card .detail {
+    width: 60%;
+}
